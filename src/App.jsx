@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <div> 
+      <div className='mw-50'>
         <Homepage />
       </div>
       <div>
@@ -31,6 +31,15 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+      </ul>
+      <p className="text-warning">.text-primary</p>
+      <p className="text-primary">.text-primary</p>
+
+
     </div>
   )
 }

@@ -1,6 +1,7 @@
 
 import React, { Component, useState } from 'react'
 import beatoPNG from '../assets/beato.png'
+import beatoLaugh from '../assets/ahaha.wav'
 
 
 class CurrentTime extends Component {
@@ -34,11 +35,13 @@ class CurrentTime extends Component {
 
         );
     }
-
-
 }
 
 function Homepage() {
+    const ahaha = () => {
+        const audio = new Audio(beatoLaugh);
+        audio.play();
+    }
     const Clock = () => {
         return (
             <div>
@@ -47,10 +50,11 @@ function Homepage() {
                 
         )
     }
+
     return (
         <div>
             <Clock />
-            <img src={beatoPNG} alt="" />
+            <img onClick={ahaha} src={beatoPNG} alt="" />
         </div>
 
     )
