@@ -2,6 +2,7 @@
 import React, { Component, useState } from 'react'
 import beatoPNG from '../assets/beato.png'
 import beatoLaugh from '../assets/ahaha.wav'
+import ProfileCard from './profileCard';
 
 
 class CurrentTime extends Component {
@@ -55,6 +56,7 @@ function Homepage() {
         <div>
             <Clock />
             <img onClick={ahaha} src={beatoPNG} alt="" />
+            <ProfileCard />
         </div>
 
     )
